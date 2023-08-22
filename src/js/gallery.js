@@ -26,17 +26,17 @@ const hiddenImages = [
   {
     src: "./images/project-5.png",
     big: "./images/project-5@2x.png",
-    alt: "Hidden Image 1",
+    alt: "Karpie koi w oczku wodnym pośród roślin",
   },
   {
     src: "./images/project-1.png",
     big: "./images/project-1@2x.png",
-    alt: "Hidden Image 2",
+    alt: "Schody z białą fasadą i szklaną balustradą na tle roślin doniczkowych",
   },
   {
     src: "./images/project-6.png",
     big: "./images/project-6@2x.png",
-    alt: "Hidden Image 2",
+    alt: "Kamienna ścieżka pośród roślin w ogrodzie tropikalnym",
   },
 ];
 
