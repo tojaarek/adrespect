@@ -34,8 +34,8 @@ mobileNavLink.forEach(item => {
 window.matchMedia('(min-width: 1024px)').addEventListener('change', event => {
   if (!event.matches) return;
   mobileMenu.classList.remove('is-open');
-  header.classList.toggle('header--border');
-  icon1.classList.toggle('a');
-  icon2.classList.toggle('c');
-  icon3.classList.toggle('b');
+  header.classList.remove('header--border');
+  icon1.classList.remove('a');
+  icon2.classList.remove('c');
+  icon3.classList.remove('b');
 });
