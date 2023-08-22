@@ -24,17 +24,17 @@ const lightbox = new simpleLightbox(".gallery a", {
 
 const hiddenImages = [
   {
-    src: "/project-5.a26b06d0.png",
+    src: "./images/project-5.png",
     big: "./images/project-5@2x.png",
     alt: "Hidden Image 1",
   },
   {
-    src: "/project-1.e80da68e.png",
+    src: "./images/project-1.png",
     big: "./images/project-1@2x.png",
     alt: "Hidden Image 2",
   },
   {
-    src: "/project-6.14072982.png",
+    src: "./images/project-6.png",
     big: "./images/project-6@2x.png",
     alt: "Hidden Image 2",
   },
