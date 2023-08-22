@@ -11,6 +11,7 @@ icon.addEventListener("click", () => {
 
 const mobileMenu = document.querySelector(".js-menu-container");
 const openMenuButton = document.querySelector(".js-open-menu");
+const header = document.querySelector(".header");
 
 const toggleMenu = () => {
   const isMenuOpen = mobileMenu.classList.toggle("is-open");
