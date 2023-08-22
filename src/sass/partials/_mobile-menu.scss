@@ -93,12 +93,21 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    &:hover,
-    &:focus {
-      color: $black;
-    }
     &--sublink {
       padding-left: 10px;
+    }
+    &--dropdown {
+      color: $black;
+      font-family: 'Inter';
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: -0.14px;
+      transition: 200ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+      transition-property: color;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
     }
   }
 }
