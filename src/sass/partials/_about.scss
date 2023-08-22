@@ -1,0 +1,89 @@
+.about {
+  width: 100%;
+  background-color: $green;
+  padding-top: 500px;
+  @include media-breakpoint-up(s) {
+    padding-top: 640px;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-top: 300px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 300px;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 97px;
+    padding-bottom: 97px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 122px;
+    padding-bottom: 122px;
+  }
+  &__no-slider {
+    position: static;
+    @include media-breakpoint-up(s) {
+      bottom: -20%;
+      left: 0;
+    }
+    @include media-breakpoint-up(sm) {
+      position: static;
+      padding-top: 290px;
+    }
+    @include media-breakpoint-up(md) {
+      padding-top: 290px;
+    }
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__no-slider-photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+    z-index: 100;
+    @include media-breakpoint-up(s) {
+      object-fit: contain;
+    }
+    @include media-breakpoint-up(sm) {
+      position: static;
+      z-index: 0;
+    }
+  }
+}
+
+.container--about {
+  width: 100%;
+  max-width: 576px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  z-index: 200;
+  background-color: $green;
+  padding: 40px 20px;
+  @include media-breakpoint-up(s) {
+    max-width: 1024px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+    max-width: 1400;
+    display: flex;
+    justify-content: end;
+    position: static;
+    z-index: 0;
+    background-color: none;
+    padding: 0;
+  }
+}

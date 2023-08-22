@@ -1,0 +1,67 @@
+.projects {
+  padding: 80px 0 80px 0;
+  background-color: $beige;
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(md) {
+    padding: 120px 0 44px 0;
+  }
+  &__wrapper {
+    padding-left: 20px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 160px;
+    }
+  }
+}
+
+.gallery {
+  width: 100%;
+  &__container {
+    position: relative;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);
+    pointer-events: none;
+    &--opacity {
+      animation: overlay 300ms ease-out;
+      opacity: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+.container--projects {
+  width: 100%;
+  max-width: 1400px;
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "filmoteka",
+  "version": "1.1.0",
+  "description": "",
+  "homepage": "https://tojaarek.github.io/adrespect",
+  "scripts": {
+    "dev": "parcel --no-cache src/*.html",
+    "build": "parcel build src/*.html --public-url /adrespect/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tojaarek/adrespect.git"
+  },
+  "keywords": [],
+  "author": "Arek Wilczyński",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.3",
+    "posthtml-include": "^1.7.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "macy": "^2.5.1",
+    "simplelightbox": "^2.14.1"
+  }
+}

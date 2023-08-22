@@ -1,0 +1,94 @@
+.offer {
+  padding: 80px 20px 80px 20px;
+  background-color: $grey;
+  position: relative;
+  z-index: 3;
+  @include media-breakpoint-up(lg) {
+    padding: 120px 20px 160px 20px;
+  }
+  &__wrapper {
+    width: 100%;
+    max-width: 1040px;
+    margin-bottom: 46px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 96px;
+      margin-left: 96px;
+      max-width: 900px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-left: 0;
+      max-width: 1040px;
+    }
+  }
+}
+
+.cards {
+  gap: 20px;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    gap: 64px;
+  }
+  &__image {
+    margin-bottom: 32px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $black;
+    padding: 48px 40px;
+    border-radius: 28px;
+    background: $white;
+    width: 100%;
+    transition: 200ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition-property: box-shadow;
+    &:is(:focus, :hover) {
+      box-shadow: 0px 15px 33px rgba(0, 0, 0, 0.344);
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -1.4px;
+    margin-bottom: 12px;
+  }
+  &__description {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.14px;
+    max-width: fit-content;
+    @include media-breakpoint-up(s) {
+      max-width: 320px;
+    }
+    @include media-breakpoint-up(sm) {
+      max-width: fit-content;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    fill: $green;
+    color: $green;
+    text-decoration: none;
+    width: fit-content;
+    border-bottom: 1px solid $green;
+    margin-top: 30px;
+    transition: 100ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    &:is(:focus, :hover) {
+      scale: 1.05;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 63px;
+    }
+  }
+}
+
+.container--offer {
+  width: 100%;
+  max-width: 1400px;
+}

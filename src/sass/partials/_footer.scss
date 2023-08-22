@@ -1,0 +1,39 @@
+.footer {
+  padding: 80px 20px;
+  background-color: $black;
+  &__description {
+    color: $grey;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.16px;
+    margin: 0;
+    max-width: 160px;
+    @include media-breakpoint-up(sm) {
+      max-width: none;
+    }
+  }
+  &__wrapper {
+    padding-bottom: 62px;
+    &--border {
+      border-bottom: 1px solid $grey;
+    }
+    &--opposite {
+      margin-top: 62px;
+      margin-bottom: 120px;
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+}
+
+.container--footer {
+  width: 100%;
+  max-width: 1400px;
+}
+
+.copyrights {
+  color: $grey;
+  line-height: 1.5;
+  letter-spacing: -0.16px;
+}
