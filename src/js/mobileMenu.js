@@ -12,6 +12,7 @@ icon.addEventListener("click", () => {
 const mobileMenu = document.querySelector(".js-menu-container");
 const openMenuButton = document.querySelector(".js-open-menu");
 const header = document.querySelector(".header");
+const mobileNavLink = document.querySelectorAll(".mobile-nav__link");
 
 const toggleMenu = () => {
   const isMenuOpen = mobileMenu.classList.toggle("is-open");
@@ -19,6 +20,7 @@ const toggleMenu = () => {
 };
 
 openMenuButton.addEventListener("click", toggleMenu);
+mobileNavLink.addEventListener("click", toggleMenu)
 
 window.matchMedia("(min-width: 1024px)").addEventListener("change", (event) => {
   if (!event.matches) return;
