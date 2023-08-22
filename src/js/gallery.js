@@ -24,17 +24,17 @@ const lightbox = new simpleLightbox(".gallery a", {
 
 const hiddenImages = [
   {
-    src: "./images/project-5.png",
+    src: "/adrespect/project-5.f73918d1.png",
     big: "./images/project-5@2x.png",
     alt: "Karpie koi w oczku wodnym pośród roślin",
   },
   {
-    src: "./images/project-1.png",
+    src: "/adrespect/project-1.2a1dddb5.png",
     big: "./images/project-1@2x.png",
     alt: "Schody z białą fasadą i szklaną balustradą na tle roślin doniczkowych",
   },
   {
-    src: "./images/project-6.png",
+    src: "/adrespect/project-6.692487a0.png",
     big: "./images/project-6@2x.png",
     alt: "Kamienna ścieżka pośród roślin w ogrodzie tropikalnym",
   },
